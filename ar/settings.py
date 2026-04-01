@@ -129,10 +129,10 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 # WhiteNoise storage to handle compression and caching
 STORAGES = {
     "default": {
-        "ENGINE": "django.db.backends.sqlite3", # Already defined above, but for completeness in newer Django
+        "BACKEND": "django.core.files.storage.FileSystemStorage",
     },
     "staticfiles": {
-        "ENGINE": "whitenoise.storage.CompressedManifestStaticFilesStorage",
+        "BACKEND": "whitenoise.storage.CompressedManifestStaticFilesStorage",
     },
 }
 
