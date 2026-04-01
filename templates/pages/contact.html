@@ -1,0 +1,84 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<!-- Page Header -->
+<div class="page-header">
+    <div class="container">
+        <h1 class="display-3 fw-bold mb-3" data-aos="zoom-in">Contactez-nous</h1>
+        <p class="lead opacity-75" data-aos="fade-up" data-aos-delay="100">Nous sommes à votre écoute pour vous
+            accompagner dans vos besoins quotidiens.</p>
+    </div>
+</div>
+
+<!-- Contact Info Cards -->
+<section>
+    <div class="container">
+        <div class="row g-4 mb-5">
+            <div class="col-md-4" data-aos="fade-up">
+                <div class="contact-info-card">
+                    <div class="contact-icon-box bg-primary bg-opacity-10 text-primary">
+                        <i class="bi bi-geo-alt-fill"></i>
+                    </div>
+                    <h4 class="fw-bold mb-3">Notre Adresse</h4>
+                    <p class="text-muted mb-0">N°1, Avenue KIMBANGU, Quartier BISIPI, Commune de Fungurumé, RDC.</p>
+                </div>
+            </div>
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="contact-info-card">
+                    <div class="contact-icon-box bg-success bg-opacity-10 text-success">
+                        <i class="bi bi-whatsapp"></i>
+                    </div>
+                    <h4 class="fw-bold mb-3">WhatsApp / Tel</h4>
+                    <p class="text-muted mb-0">+(243) 993 130 966<br>Disponible 24/7 pour vos urgences.</p>
+                </div>
+            </div>
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="contact-info-card">
+                    <div class="contact-icon-box bg-warning bg-opacity-10 text-warning">
+                        <i class="bi bi-envelope-fill"></i>
+                    </div>
+                    <h4 class="fw-bold mb-3">Email Support</h4>
+                    <p class="text-muted mb-0">ayumbarevelation80@gmail.com<br>Réponse sous 24h.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Map & Legal -->
+        <div class="row g-5 align-items-center mt-5">
+            <div class="col-lg-7" data-aos="fade-right">
+                <div class="map-placeholder">
+                    <div class="map-overlay">
+                        <div>
+                            <i class="bi bi-map-fill display-1 mb-3"></i>
+                            <h3 class="fw-bold">Retrouvez-nous à Fungurumé</h3>
+                            <p class="mb-4">Cliquez pour voir l'itinéraire sur Google Maps</p>
+                            <a href="https://www.google.com/maps" target="_blank" rel="noopener"
+                                class="btn btn-premium btn-premium-secondary">Ouvrir la carte</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5" data-aos="fade-left">
+                <div class="card-premium bg-primary text-white p-5 border-0 shadow-lg">
+                    <h3 class="fw-bold mb-4">Informations Légales</h3>
+                    <p class="text-white-50 mb-4">A.R SERVICES est une société dûment enregistrée en République
+                        Démocratique du Congo.</p>
+                    <div class="mb-4">
+                        <label class="text-white-50 small text-uppercase fw-bold">RCCM</label>
+                        <div class="fs-5 fw-bold">CD/LSH/RCCM/23-B-01527</div>
+                    </div>
+                    <div class="mb-4">
+                        <label class="text-white-50 small text-uppercase fw-bold">IDNAT</label>
+                        <div class="fs-5 fw-bold">05-F4300-N29410</div>
+                    </div>
+                    <div>
+                        <label class="text-white-50 small text-uppercase fw-bold">Numéro Impôt</label>
+                        <div class="fs-5 fw-bold">A2319567U</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,152 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<!-- Hero Section -->
+<section id="hero">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-7" data-aos="fade-right">
+                <span
+                    class="badge bg-warning text-dark text-uppercase mb-3 px-3 py-2 rounded-pill fw-bold shadow-sm">Votre
+                    Partenaire de Confiance</span>
+                <h1 class="display-1 fw-bold mb-4">Simplifier votre vie <span class="text-warning">au
+                        quotidien</span></h1>
+                <p class="lead mb-5 opacity-90 fs-4">A.R SERVICES à Fungurumé : une gamme exhaustive de solutions
+                    conçues pour vous faire gagner du temps et stimuler votre croissance.</p>
+                <div class="d-flex gap-3 flex-wrap">
+                    <a href="{% url 'services' %}" class="btn btn-premium btn-premium-secondary py-3 px-5">Nos
+                        Services</a>
+                    <a href="{% url 'about' %}" class="btn btn-premium btn-premium-outline py-3 px-5">En savoir plus</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Stats Section -->
+<div class="container">
+    <div class="stats-box" data-aos="fade-up">
+        <div class="row text-center gy-4">
+            <div class="col-6 col-md-3 border-end border-light-subtle">
+                <div class="stat-item">
+                    <h3 class="fw-bold">1000+</h3>
+                    <p class="text-muted mb-0">Clients Satisfaits</p>
+                </div>
+            </div>
+            <div class="col-6 col-md-3 border-md-end border-light-subtle">
+                <div class="stat-item">
+                    <h3 class="fw-bold">24/7</h3>
+                    <p class="text-muted mb-0">Disponibilité</p>
+                </div>
+            </div>
+            <div class="col-6 col-md-3 border-end border-light-subtle">
+                <div class="stat-item">
+                    <h3 class="fw-bold">10+</h3>
+                    <p class="text-muted mb-0">Services Experts</p>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="stat-item">
+                    <h3 class="fw-bold">100%</h3>
+                    <p class="text-muted mb-0">Securisé</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Why Us Section -->
+<section id="why-us">
+    <div class="container">
+        <div class="section-title text-center mx-auto max-w-700">
+            <h2 class="fw-bold">Pourquoi choisir A.R SERVICES ?</h2>
+            <p class="text-muted lead mt-3">Nous nous engageons à offrir une expérience client exceptionnelle basée
+                sur la rapidité et la fiabilité.</p>
+        </div>
+        <div class="row g-4 mt-4">
+            <div class="col-lg-4" data-aos="fade-up">
+                <div class="card-premium">
+                    <i class="bi bi-shield-check text-primary"></i>
+                    <h4 class="fw-bold mb-3">Fiabilité Totale</h4>
+                    <p class="text-muted">Des transactions sécurisées et transparentes pour tous vos transferts et
+                        opérations de change.</p>
+                </div>
+            </div>
+            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="card-premium">
+                    <i class="bi bi-lightning-charge text-warning"></i>
+                    <h4 class="fw-bold mb-3">Rapidité d'Exécution</h4>
+                    <p class="text-muted">Ne perdez plus de temps. Nous traitons vos demandes de crédits et forfaits
+                        en un clin d'œil.</p>
+                </div>
+            </div>
+            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="card-premium">
+                    <i class="bi bi-geo-alt text-success"></i>
+                    <h4 class="fw-bold mb-3">Service de Proximité</h4>
+                    <p class="text-muted">Basés à Fungurumé, nous connaissons vos besoins et restons proches de vous
+                        au quotidien.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Services Preview -->
+<section id="services-preview" class="bg-white">
+    <div class="container">
+        <div class="row align-items-center mb-5">
+            <div class="col-md-8">
+                <h2 class="fw-bold fs-1">Ce que nous faisons pour vous</h2>
+            </div>
+            <div class="col-md-4 text-md-end">
+                <a href="{% url 'services' %}" class="btn btn-link text-primary fw-bold text-decoration-none fs-5">Voir
+                    tous les services <i class="bi bi-arrow-right"></i></a>
+            </div>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-3" data-aos="zoom-in">
+                <div class="p-4 border rounded-4 text-center h-100 bg-light transition-base hover-shadow">
+                    <i class="bi bi-phone fs-1 text-primary mb-3"></i>
+                    <h5 class="fw-bold">Crédits Télécom</h5>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="100">
+                <div class="p-4 border rounded-4 text-center h-100 bg-light transition-base hover-shadow">
+                    <i class="bi bi-currency-exchange fs-1 text-warning mb-3"></i>
+                    <h5 class="fw-bold">Bureau de Change</h5>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="200">
+                <div class="p-4 border rounded-4 text-center h-100 bg-light transition-base hover-shadow">
+                    <i class="bi bi-cash-stack fs-1 text-success mb-3"></i>
+                    <h5 class="fw-bold">Mobile Money</h5>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="300">
+                <div class="p-4 border rounded-4 text-center h-100 bg-light transition-base hover-shadow">
+                    <i class="bi bi-tv fs-1 text-info mb-3"></i>
+                    <h5 class="fw-bold">Abonnements TV</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="py-0">
+    <div class="container">
+        <div class="bg-primary rounded-5 p-5 text-center text-white shadow-lg overflow-hidden position-relative"
+            data-aos="zoom-out">
+            <div class="position-relative z-index-1">
+                <h2 class="display-5 fw-bold mb-4">Prêt à simplifier votre routine ?</h2>
+                <p class="lead mb-5 opacity-75">Commandez vos crédits, forfaits ou services de change en ligne en
+                    quelques clics.</p>
+                <a href="{% url 'commande' %}" class="btn btn-premium btn-premium-secondary btn-lg py-3 px-5">Passer une
+                    commande maintenant</a>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

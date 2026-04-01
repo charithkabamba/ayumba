@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-4">
+                    <div class="footer-logo">A.R SERVICES</div>
+                    <p class="text-white-50 mb-4">Votre partenaire de confiance à Fungurumé pour tous vos besoins
+                        numériques et financiers. Excellence, rapidité et sécurité.</p>
+                    <div class="social-links">
+                        <a href="#" title="Facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="https://wa.me/243993130966" title="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+                        <a href="mailto:ayumbarevelation80@gmail.com" title="Email"><i class="bi bi-envelope"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-2 offset-lg-1">
+                    <h5 class="footer-heading">Liens Rapides</h5>
+                    <ul class="footer-links">
+                        <li><a href="{% url 'home' %}"><i class="bi bi-chevron-right"></i> Accueil</a></li>
+                        <li><a href="{% url 'about' %}"><i class="bi bi-chevron-right"></i> À Propos</a></li>
+                        <li><a href="{% url 'services' %}"><i class="bi bi-chevron-right"></i> Nos Services</a></li>
+                        <li><a href="{% url 'contact' %}"><i class="bi bi-chevron-right"></i> Contactez-nous</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-lg-2">
+                    <h5 class="footer-heading">Services</h5>
+                    <ul class="footer-links">
+                        <li><a href="{% url 'services' %}"><i class="bi bi-chevron-right"></i> Mobile Money</a></li>
+                        <li><a href="{% url 'services' %}"><i class="bi bi-chevron-right"></i> Bureau de Change</a></li>
+                        <li><a href="{% url 'services' %}"><i class="bi bi-chevron-right"></i> Crédits & Data</a></li>
+                        <li><a href="{% url 'services' %}"><i class="bi bi-chevron-right"></i> Abonnements TV</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h5 class="footer-heading">Newsletter</h5>
+                    <p class="text-white-50 small mb-3">Inscrivez-vous pour recevoir nos dernières offres et taux de
+                        change.</p>
+                    <div class="newsletter-box">
+                        <input type="email" placeholder="Votre email...">
+                        <button class="btn-subscribe">OK</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6 text-center text-md-start">
+                        <p>&copy; <span id="year"></span> A.R SERVICES. Tous droits réservés.</p>
+                    </div>
+                    <div class="col-md-6 mt-3 mt-md-0">
+                        <ul class="footer-bottom-links">
+                            <li><a href="#">Confidentialité</a></li>
+                            <li><a href="#">Conditions</a></li>
+                            <li><a href="#">Mentions Légales</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
